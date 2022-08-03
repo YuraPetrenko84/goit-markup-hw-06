@@ -1,4 +1,4 @@
-
+  
 :root {
     /* fonts */
     --main-font: 'Roboto', sans-serif;
@@ -397,11 +397,6 @@ border-bottom: 1px solid #ECECEC;
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
-
-
-
-
 
 
 /* Наша команда */
@@ -938,9 +933,9 @@ color: var(--logo-blue-txt-cl);
 } 
 
 .backdrope.is-hidden {
-     overflow: hidden; 
-     opacity: 0; 
-     pointer-events: none;
+    overflow: hidden; 
+    opacity: 0; 
+    pointer-events: none;
 } 
 
 .modal {
@@ -950,6 +945,7 @@ color: var(--logo-blue-txt-cl);
     transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
+    padding: 40px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -958,6 +954,7 @@ color: var(--logo-blue-txt-cl);
 }
 
 .button-close-modal {
+    /* display: block; */
     position: absolute;
     top: 8px;
     right: 8px;
@@ -972,16 +969,21 @@ color: var(--logo-blue-txt-cl);
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
+/* animation: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    
+   
 }
 
-/* .svg-close-modal {
-     position: absolute; 
-     right: 0;
-    top: 0; 
-    display: flex;
-        align-items: center;
-        justify-content: center;
-} */
+.svg-padding {
+    
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.button-close-modal :hover {
+fill: #2196F3;
+
+} 
 
 
 /* Портфолио текст */

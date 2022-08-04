@@ -298,9 +298,9 @@ border-bottom: 1px solid #ECECEC;
 .btn:focus {
     cursor: pointer;
     --button-text-color: #000000;
-        color: var(--button-text-color);
-        --focus-color: #ffffff;
-        background-color: var(--focus-color);
+    color: var(--button-text-color);
+    --focus-color: #ffffff;
+    background-color: var(--focus-color);
 
 }
 /* Наши преимущества */
@@ -651,7 +651,7 @@ padding-bottom: 30px;
 
 .footer-right-block {
 margin-left: 70px;
-   
+   margin-right: 93px;
 } 
 
 .footer-social-list {
@@ -702,6 +702,80 @@ margin-left: 70px;
     background-color: #2196F3;
     outline: none;
 } 
+
+/* Футер підписатися*/
+
+.subscribe-title {
+    margin-bottom: 20px;
+    padding-top: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-field {
+    display: inline-block;
+    width: 358px;
+    margin-right: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: inherit;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+.subscribe-field :hover
+.subscribe-field :focus {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-color: rgba(33, 150, 243, 1);
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.button__icon {
+    margin-left: 10px;
+}
+
+
+
+
 
 /* Prtfolio*/
 .page-header-portfolio {
@@ -954,7 +1028,6 @@ color: var(--logo-blue-txt-cl);
 }
 
 .button-close-modal {
-    /* display: block; */
     position: absolute;
     top: 8px;
     right: 8px;
@@ -970,20 +1043,147 @@ color: var(--logo-blue-txt-cl);
     background-color: transparent;
     cursor: pointer;
 /* animation: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-    
-   
 }
 
 .svg-padding {
-    
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .button-close-modal :hover {
 fill: #2196F3;
-
 } 
+
+.modal-form-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.modal-form-container{
+    padding-top: 12px;
+    text-align: center;
+}
+
+.modal-form-group {
+
+}
+
+.modal-form-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+.label-text {
+    margin-bottom: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    text-align: left;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.form-field {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 40px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+}
+
+.modal-form-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-label .comment {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+}
+
+.modal-form-label .checkbox {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 12px;
+}
+
+.standart-checkbox {
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 9px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+
+
+}
+
+.icon-checkbox {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    opacity: 0;
+}
+
+.agreement {
+    font-family: 'Roboto';
+    font-weight: 425;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.link-agreement {
+    color: #2196F3;
+}
+
+.btn-send-modal-form {
+    padding: 10px 55px 10px 56px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+}
+
+.btn-send {
+    
+}
+
 
 
 /* Портфолио текст */

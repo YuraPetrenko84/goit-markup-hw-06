@@ -651,7 +651,7 @@ padding-bottom: 30px;
 
 
 .footer-right-block {
-margin-left: 70px;
+   margin-left: 70px;
    margin-right: 93px;
 } 
 
@@ -659,7 +659,7 @@ margin-left: 70px;
     display: flex;
     align-items: baseline;
     justify-content: center; 
-     gap: 10px;
+    gap: 10px;
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -706,75 +706,72 @@ margin-left: 70px;
 
 /* Футер підписатися*/
 
-.subscribe-title {
-    margin-bottom: 20px;
-    padding-top: 12px;
-    font-family: 'Roboto';
+.footer-subsubscription-form-group {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-subscription-form-input {
+    display: inline-block;
+    width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px;
     font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscription-form-input:hover,
+.footer-subscription-form-input:focus {
+    border: 1px solid #2196F3;
+    border-color: #2196F3;
+    outline: none;
+   
+}
+
+.footer-subscription-form-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2196F3;
+    border-radius: 4px;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding-top: 10px;
+    padding-right: 28px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-left: 28px;
+    cursor: pointer;
+    color: #FFFFFF;
+    border: none;
+}
+
+
+.footer-subscription-form-title {
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
 }
-
-.subscribe-form {
-    display: flex;
-}
-
-.subscribe-field {
-    display: inline-block;
-    width: 358px;
-    margin-right: 12px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    background-color: inherit;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    outline: none;
-}
-.subscribe-field :hover
-.subscribe-field :focus {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-color: rgba(33, 150, 243, 1);
-}
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background-color: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.button__icon {
-    margin-left: 10px;
-}
-
-
 
 
 
@@ -958,6 +955,7 @@ margin-left: 70px;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl)
 }
+
 .link-cards:hover,
 .link-cards:focus {
 color: var(--logo-blue-txt-cl);
@@ -1058,6 +1056,7 @@ color: var(--logo-blue-txt-cl);
 .modal-btn-icon:hover,
 .modal-btn-icon:focus {
     fill: #2196f3;
+        
 }
 
 .register-form {
